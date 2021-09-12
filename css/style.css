@@ -1,0 +1,300 @@
+/* Header section start */
+#header {
+    background-image: url(../img/home/02.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 800px;
+}
+
+.header-overlay {
+    background-color: rgb(58 45 82 / 45%);
+    position: absolute;
+    height: 800px;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 30px;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 71%;
+}
+
+.nav-menu ul li {
+    list-style: none;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin: 0 20px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    transition: .5s ease;
+}
+
+.nav-menu ul li:hover a {
+    color: #e54b4b;
+}
+
+.nav-icons .fab {
+    border: 1px solid white;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border-radius: 9px;
+    margin: 0 2px;
+    text-align: center;
+    font-size: 13px;
+    padding: 9px;
+    transition: .5s ease;
+}
+
+.nav-icons .fab:hover {
+    background: #e54b4b;
+    border: 1px solid #e54b4b;
+}
+
+.nav-icons .fa-facebook-f {
+    padding: 9px 11px;
+}
+
+.nav-icons:hover .nav-icons i {
+    background-color: white;
+}
+
+
+.header-photo img {
+    width: 41%;
+}
+
+.header-photo img {
+    border-radius: 50%;
+    border: 5px solid #a5a0a0;
+}
+
+.header-content {
+    position: absolute;
+    top: 31%;
+    left: 2%;
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 46px;
+    margin: 19px;
+}
+
+.header-content p {
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.header-content button i {
+    margin-left: 10px;
+}
+
+/* Header section end */
+
+/* About section start */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-content h2 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #e54b4b;
+    font-size: 29px;
+}
+
+.about-content-p {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.about-content img {
+    width: 21%;
+    display: block;
+}
+
+.about-photo img {
+    border: 16px solid #6c757d;
+    width: 75%;
+}
+
+/* About section end */
+
+/* Hobbies section start */
+
+.hobbies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.hobby {
+    background: #253649;
+    width: 85%;
+    border-radius: 4px;
+    transition: .4s ease;
+    display: flex;
+    align-items: center;
+}
+
+.hobby:hover {
+    box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -webkit-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -moz-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    background: #1F2D3D;
+}
+
+.hobby-icon {
+    padding: 16px;
+    border-right: 1px solid gray;
+    transition: .4s ease;
+}
+
+.hobby-text {
+    padding: 19px;
+}
+
+.hobby:hover .hobby-icon {
+    color: #e54b4b;
+}
+
+/* Hobbies section end */
+
+/* Counter section start */
+
+#counter {
+    height: 250px;
+    background-image: url(../img/bg-counter.jpg);
+    border-radius: 13px;
+    margin: 30px;
+    background-position: center center;
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.counter-item {
+    text-align: center;
+}
+
+.counter-item span {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.counter-item h5 {
+    font-size: 30px;
+    margin: 14px 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Counter section end */
+
+/* Offer section start */
+
+#offer {
+    background: #253649;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 33px;
+    margin: 30px 0;
+}
+
+.offer-item {
+    text-align: center;
+    border: 1px solid #495057;
+    border-radius: 10px;
+    padding: 67px 50px;
+    transition: .5s ease;
+}
+
+.offer-item:hover .fourth-text {
+    color: #e54b4b;
+}
+
+.offer-item:hover {
+    box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -webkit-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -moz-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    background: #1F2D3D;
+}
+
+/* Offer section end */
+
+/* Participation section start */
+
+
+.participation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.participation-item{
+    border: 1px solid #495057;
+    border-radius: 10px;
+    padding: 6px 10px 30px 30px;
+    transition: .5s ease;
+}
+
+.participation-item span{
+    font-size: 13px;
+}
+
+.participation-item:hover {
+    box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -webkit-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -moz-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    background: #1F2D3D;
+}
+
+
+.participation-item:hover .fourth-text {
+    color: #e54b4b;
+}
+
+.participation-date p{
+    border: 1px solid #495057;
+    border-radius: 10px;
+    width: 27%;
+    text-align: center;
+    padding: 15px 32px;
+}
+
+/* Participation section end */
+
+/* Portfolio section start */
+
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.portfolio img{
+    width: 100%;
+}
