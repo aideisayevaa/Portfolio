@@ -40,33 +40,6 @@
     color: #e54b4b;
 }
 
-.nav-icons .fab {
-    border: 1px solid white;
-    cursor: pointer;
-    background: none;
-    color: white;
-    border-radius: 9px;
-    margin: 0 2px;
-    text-align: center;
-    font-size: 13px;
-    padding: 9px;
-    transition: .5s ease;
-}
-
-.nav-icons .fab:hover {
-    background: #e54b4b;
-    border: 1px solid #e54b4b;
-}
-
-.nav-icons .fa-facebook-f {
-    padding: 9px 11px;
-}
-
-.nav-icons:hover .nav-icons i {
-    background-color: white;
-}
-
-
 .header-photo img {
     width: 41%;
 }
@@ -254,14 +227,14 @@
     gap: 40px;
 }
 
-.participation-item{
+.participation-item {
     border: 1px solid #495057;
     border-radius: 10px;
     padding: 6px 10px 30px 30px;
     transition: .5s ease;
 }
 
-.participation-item span{
+.participation-item span {
     font-size: 13px;
 }
 
@@ -277,7 +250,7 @@
     color: #e54b4b;
 }
 
-.participation-date p{
+.participation-date p {
     border: 1px solid #495057;
     border-radius: 10px;
     width: 27%;
@@ -289,14 +262,15 @@
 
 /* Portfolio section start */
 
-#portfolio{
+#portfolio {
     background: #253649;
 }
 
-.portfolio-buttons{
+.portfolio-buttons {
     margin: 40px;
 }
-.portfolio-buttons ul li{
+
+.portfolio-buttons ul li {
     padding: 8px;
     background: none;
     border-radius: 10px;
@@ -307,17 +281,17 @@
     transition: .5s ease;
 }
 
-.portfolio-buttons ul li:hover{
+.portfolio-buttons ul li:hover {
     background: #e54b4b;
 }
 
-.portfolios{
+.portfolios {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.portfolio{
+.portfolio {
     border: 1px solid #374b61;
     border-radius: 12px;
     text-align: center;
@@ -326,13 +300,13 @@
     position: relative;
 }
 
-.portfolio:hover{
+.portfolio:hover {
     box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
     -webkit-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
     -moz-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
 }
 
-.portfolio img{
+.portfolio img {
     width: 100%;
     border-radius: 12px;
 }
@@ -342,62 +316,160 @@
 
 /* Blogs section start */
 
-.blogs{
+#blogs {
+    background: #253649;
+}
+
+.blogs {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 20px 0;
 }
 
-.blog{
+.blog {
     border: 1px solid #374b61;
     border-radius: 12px;
     cursor: pointer;
     position: relative;
 }
 
-.blog:hover{
+.blog:hover {
     box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
     -webkit-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
     -moz-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
 }
 
-.blog img{
+.blog img {
     width: 100%;
     border-radius: 12px;
 }
 
-.blog h3:hover{
+.blog h3:hover {
     color: #e54b4b;
 }
 
-.blog-content{
+.blog-content {
     padding: 25px 20px
 }
 
-.blog-content h3{
+.blog-content h3 {
     line-height: 32px;
 }
 
-.blog-content span{
+.blog-content span {
     font-size: 14px;
     letter-spacing: 1px;
 }
 
-.blog-author .feather{
+.blog-author .feather {
     margin-right: 4px;
 }
 
-.blog-footer{
+.blog-footer {
     padding-top: 21px;
 }
 
-.blog-footer .far{
+.blog-footer .far {
     margin-right: 6px;
 }
 
-.blog-line{
+.blog-line {
     border-bottom: 1px solid #495057;
 }
 
 /* Blogs section end */
+
+/* Hire me section start */
+
+#hireme {
+    background-image: url(../img/hireme.jpg);
+    background-position: center center;
+    padding: 57px 0 31px 0;
+}
+
+.fa-chevron-down {
+    margin-left: 10px;
+}
+
+/* Hire me section end */
+
+/* Contact section start */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 40px 0;
+}
+
+.contact-item{
+    text-align: center;
+}
+
+.contact-item span{
+    color: #e54b4b;
+    cursor: pointer;
+    line-height: 42px;
+    transition: .3s ease;
+}
+
+.contact-item span:hover{
+    color: red;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.message{
+    grid-area: 1 / 2 / span 3 / span 1;
+    background: #1F2D3D;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 14px;
+    border: 1px solid #495057;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.form{
+    background: #1F2D3D;
+    padding: 10px 17px;
+    border-radius: 8px;
+    border: 1px solid #495057;
+    color: white;
+}
+
+/* Contact section end */
+
+/* Footer section start */
+
+#footer{
+    background: #253649;
+    padding: 40px 0 20px 0;
+}
+
+.footer p{
+    text-align: center;
+}
+
+.footer img{
+    width: 17%;
+    margin: 20px;
+}
+
+.footer-line{
+    height: 1px;
+    width: 100%;
+    background: #495057;
+    margin: 60px 0 30px 0;
+}
+
+/* Footer section start */
+
+
+   

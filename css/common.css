@@ -34,7 +34,7 @@
     text-align: center;
 }
 
-.flex-direction-column{
+.flex-direction-column {
     flex-direction: column;
 }
 
@@ -48,19 +48,19 @@
 
 /* Text */
 
-.text-primary{
+.text-primary {
     color: #E54B4B;
 }
 
-.first-text{
-    font-family: "Montserrat",sans-serif;
+.first-text {
+    font-family: "Montserrat", sans-serif;
     line-height: 1.5;
     font-weight: 600;
     font-size: 26px;
     color: white;
 }
 
-.second-text{
+.second-text {
     font-size: 17px;
     color: #9BACC4;
     letter-spacing: 0.03em;
@@ -70,7 +70,7 @@
     margin: 20px;
 }
 
-.third-text{
+.third-text {
     font-size: 17px;
     color: #9BACC4;
     letter-spacing: 0.03em;
@@ -98,9 +98,9 @@
     font-size: 14px;
     cursor: pointer;
     margin: 26px 0;
-    box-shadow: -1px 2px 40px -13px rgba(215,191,148,0.49);
-    -webkit-box-shadow: -1px 2px 40px -13px rgba(215,191,148,0.49);
-    -moz-box-shadow: -1px 2px 40px -13px rgba(215,191,148,0.49);
+    box-shadow: -1px 0px 16px -5px rgba(255, 143, 143, 0.75);
+    -webkit-box-shadow: -1px 0px 16px -5px rgba(255, 143, 143, 0.75);
+    -moz-box-shadow: -1px 0px 16px -5px rgba(255, 143, 143, 0.75);
 }
 
 .btn:hover {
@@ -110,6 +110,34 @@
 
 /* Margin Padding */
 
-.section-padding{
+.section-padding {
     padding: 70px 0;
+}
+
+/* Icons */
+
+.icons .fab {
+    border: 1px solid white;
+    cursor: pointer;
+    background: none;
+    color: white;
+    border-radius: 9px;
+    margin: 0 2px;
+    text-align: center;
+    font-size: 13px;
+    padding: 9px;
+    transition: .5s ease;
+}
+
+.icons .fab:hover {
+    background: #e54b4b;
+    border: 1px solid #e54b4b;
+}
+
+.icons .fa-facebook-f {
+    padding: 9px 11px;
+}
+
+.icons:hover .icons i {
+    background-color: white;
 }
