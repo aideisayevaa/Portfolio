@@ -289,12 +289,115 @@
 
 /* Portfolio section start */
 
+#portfolio{
+    background: #253649;
+}
+
+.portfolio-buttons{
+    margin: 40px;
+}
+.portfolio-buttons ul li{
+    padding: 8px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #374b61;
+    cursor: pointer;
+    list-style: none;
+    margin: 0 10px;
+    transition: .5s ease;
+}
+
+.portfolio-buttons ul li:hover{
+    background: #e54b4b;
+}
+
 .portfolios{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
 
+.portfolio{
+    border: 1px solid #374b61;
+    border-radius: 12px;
+    text-align: center;
+    padding-bottom: 27px;
+    cursor: pointer;
+    position: relative;
+}
+
+.portfolio:hover{
+    box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -webkit-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -moz-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+}
+
 .portfolio img{
     width: 100%;
+    border-radius: 12px;
 }
+
+/* Portfolio section end */
+
+
+/* Blogs section start */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.blog{
+    border: 1px solid #374b61;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.blog:hover{
+    box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -webkit-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+    -moz-box-shadow: -1px 2px 40px -13px rgba(215, 191, 148, 0.49);
+}
+
+.blog img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.blog h3:hover{
+    color: #e54b4b;
+}
+
+.blog-content{
+    padding: 25px 20px
+}
+
+.blog-content h3{
+    line-height: 32px;
+}
+
+.blog-content span{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.blog-author .feather{
+    margin-right: 4px;
+}
+
+.blog-footer{
+    padding-top: 21px;
+}
+
+.blog-footer .far{
+    margin-right: 6px;
+}
+
+.blog-line{
+    border-bottom: 1px solid #495057;
+}
+
+/* Blogs section end */

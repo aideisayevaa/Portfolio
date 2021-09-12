@@ -24,6 +24,11 @@ body{
     justify-content: space-between;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .col-1 {
     width: 8.33%;
 }
