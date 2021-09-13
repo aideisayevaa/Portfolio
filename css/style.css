@@ -66,11 +66,29 @@
     text-align: center;
 }
 
-
-
 .header-content button i {
     margin-left: 10px;
 }
+
+/* #nav-toggle {
+    position: absolute;
+    top: -160px;
+}
+
+.icon-burger {
+    display: none;
+    margin: 37px 0 0 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.icon-burger .fas {
+    font-size: 30px;
+    color: #D4C1DE;
+    border: 1px solid #D4C1DE;
+    padding: 5px 10px;
+    border-radius: 10px;
+} */
 
 /* Header section end */
 
