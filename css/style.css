@@ -225,6 +225,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
+    position: relative;
 }
 
 .participation-item {
@@ -232,6 +233,7 @@
     border-radius: 10px;
     padding: 6px 10px 30px 30px;
     transition: .5s ease;
+    position: relative;
 }
 
 .participation-item span {
@@ -256,6 +258,35 @@
     width: 27%;
     text-align: center;
     padding: 15px 32px;
+}
+
+.participation::after{
+    background-color: #495057;
+    content: "";
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+}
+
+.participation-item::after{
+    border: 2px solid #161c2d;
+    content: "";
+    position: absolute;
+    top: 12px;
+    width: 12px;
+    height: 12px;
+    z-index: 1;
+    background-color: #f8f9fa;
+    border-radius: 30px;
+    left: -29px;
+}
+
+.participation-item-second::after{
+    left: 102.3%;
 }
 
 /* Participation section end */
@@ -313,6 +344,70 @@
 
 /* Portfolio section end */
 
+/* Testimonials section start */
+
+.testimonials-full{
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+}
+
+.testimonials-content{
+    padding: 70px;
+}
+
+.testimonials-photo img{
+    width: 100%;
+}
+
+.testimonials-title h2{
+    margin: 20px;
+}
+
+.testimonials-title p{
+   text-align: center;
+}
+
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.testimonials-item{
+    border:1px solid #242939;
+    padding: 25px;
+    border-radius: 11px;
+}
+
+.stars-icons i{
+    font-size: 12px;
+    color: #e54b4b;
+    margin: 0 2px;
+}
+
+.testimonials-item h6{
+    font-size: 16px;
+}
+
+.author{
+    margin-top: 20px;
+}
+
+.author-photo img{
+    border-radius: 50%;
+    width: 70%;
+}
+
+.author-content h5{
+    font-size: 17px;
+}
+
+.author-content span{
+    font-size: 13px;
+    color: #9BACC4;
+}
+/* Testimonials section end */
 
 /* Blogs section start */
 

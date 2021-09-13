@@ -22,6 +22,10 @@
     justify-content: space-around;
 }
 
+.align-items-start{
+    align-items: flex-start;
+}
+
 .align-items-center {
     align-items: center;
 }
