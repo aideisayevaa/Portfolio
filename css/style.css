@@ -16,6 +16,7 @@
 .navbar {
     padding: 30px;
     align-items: center;
+    z-index: 20;
 }
 
 .nav-logo img {
@@ -70,13 +71,14 @@
     margin-left: 10px;
 }
 
-/* #nav-toggle {
+
+#nav-toggle {
     position: absolute;
     top: -160px;
 }
 
 .icon-burger {
-    display: none;
+    display: block;
     margin: 37px 0 0 20px;
     transform: translateY(-50%);
     cursor: pointer;
@@ -88,7 +90,7 @@
     border: 1px solid #D4C1DE;
     padding: 5px 10px;
     border-radius: 10px;
-} */
+}
 
 /* Header section end */
 
@@ -221,6 +223,13 @@
     border-radius: 10px;
     padding: 67px 50px;
     transition: .5s ease;
+    position: relative;
+}
+
+.offer-item-box .feather{
+    color: #e54b4b;
+    height: 32px;
+    width: 32px;
 }
 
 .offer-item:hover .fourth-text {
@@ -234,6 +243,31 @@
     background: #1F2D3D;
 }
 
+.offer-overlay{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: .5s ease;
+    opacity: .06;
+}
+
+.offer-item:hover .offer-overlay{
+    right: 33%;
+    bottom: 15%;
+}
+
+
+.offer-overlay-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.offer-item:hover .offer-overlay-icon{
+    width: 130px;
+    height: 130px;
+}
+
 /* Offer section end */
 
 /* Participation section start */
@@ -242,6 +276,7 @@
 .participation {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
     gap: 40px;
     position: relative;
 }
@@ -424,6 +459,22 @@
 .author-content span{
     font-size: 13px;
     color: #9BACC4;
+}
+
+.testimonials-circle{
+    width: 18px;
+    height: 9px;
+    border-radius: 30px;
+    background: transparent;
+    border: 2px solid #e54b4b;
+    margin: 3px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.testimonials-circle:hover{
+    background: #e54b4b;
+
 }
 /* Testimonials section end */
 
