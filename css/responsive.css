@@ -104,10 +104,10 @@
 
     .participation {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,auto);
+        grid-template-rows: repeat(6, auto);
     }
 
-    .participation:nth-child(4){
+    .participation:nth-child(4) {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
     }
@@ -135,7 +135,7 @@
         justify-content: flex-start;
     }
 
-    .participation-date p{
+    .participation-date p {
         width: 34%;
         padding: 15px 14px;
     }
@@ -149,11 +149,11 @@
         margin: 0 5px;
     }
 
-    .testimonials-full{
+    .testimonials-full {
         grid-template-columns: 1fr;
     }
 
-    .testimonials{
+    .testimonials {
         grid-template-columns: 1fr;
     }
 
@@ -191,45 +191,12 @@
     .footer img {
         width: 37%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
 }
 
 @media (min-width:576px) and (max-width:768px) {
 
     .container {
-        width: 80%;
+        width: 90%;
     }
 
     .second-text {
@@ -241,6 +208,9 @@
         display: none;
     }
 
+    .icon-burger {
+        display: block;
+    }
     .nav-menu {
         display: none;
         /* float: none;
@@ -273,6 +243,15 @@
     .icon-burger {
         display: block;
     } */
+
+    .navbar {
+        padding: 0;
+    }
+
+    .nav-logo img {
+        width: 149%;
+    }
+
     .header-content p {
         width: 61%;
     }
@@ -286,7 +265,7 @@
     }
 
     .about-photo img {
-        width: 98%;
+        width: 84%;
         margin: 20px;
     }
 
@@ -311,10 +290,16 @@
 
     .offer {
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .offer-item {
-        padding: 40px 35px;
+        padding: 57px 35px;
+        width: 70%;
+    }
+
+    .participation-date p{
+        width: 52%;
     }
 
     .portfolios {
@@ -324,6 +309,23 @@
     .portfolio-buttons ul li {
         font-size: 17px;
         margin: 0 5px;
+    }
+
+    .testimonials-full {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-photo {
+        text-align: center;
+    }
+
+    .testimonials-photo img {
+        width: 53%;
+        border-radius: 31%;
     }
 
     .blogs {
@@ -362,43 +364,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #testimonials {
-        display: none;
-    }
-
-    #participation {
-        display: none;
-    }
-
-
 }
 
 @media (min-width:768px) and (max-width:992px) {
@@ -409,6 +374,18 @@
 
     .nav-menu {
         display: none;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+    .nav-logo img {
+        width: 129%;
     }
 
     .container {
