@@ -28,7 +28,7 @@
 
 <body>
     <!-- Header section start -->
-    <div id="header">
+    <section id="header">
         <div id="particles-js"></div>
         <div class="header-overlay">
             <div id="myNavbar" class="row navbar">
@@ -40,14 +40,14 @@
                 <div class="col-6">
                     <div class="nav-menu">
                         <input id="nav-toggle" type="checkbox">
-                        <ul class="flex">
+                        <ul class="navbar-menu flex">
                             <input id="nav-toggle" type="checkbox">
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">SERVICES</a></li>
-                            <li><a href="#">RESUME</a></li>
-                            <li><a href="#">PROJECTS</a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#header">Ana Səhifə</a></li>
+                            <li><a href="#offer">Xidmətlər</a></li>
+                            <li><a href="#participation">Təhsil</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blogs">Məqalələr</a></li>
+                            <li><a href="#contact">Əlaqə</a></li>
                         </ul>
 
                     </div>
@@ -55,9 +55,11 @@
                 </div>
                 <div class="col-2 flex justify-content-around">
                     <div class="icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/aideisayevaa"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aid%C9%99-isayeva-80954a209"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://instagram.com/aidaisayevaa?utm_medium=copy_link"><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                     <label for="nav-toggle" class="icon-burger">
                         <i class="fas fa-bars"></i>
@@ -70,50 +72,58 @@
                         <div
                             class="header-content flex justify-content-center align-items-center flex-direction-column">
                             <div class="header-photo flex justify-content-center">
-                                <img src="img/home/hero.jpg" alt="">
+                                <img src="img/me2.jpg" alt="">
                             </div>
-                            <h1>I Am <span class="text-primary">Web Developer</span></h1>
+                            <div class="header-content-text">
+                                <p>Mən, </p>
+                                <span is="type-async" id="type-text"> Frontend Proqramçı</span>
+                                <span class="blinking-cursor"></span>
+                            </div>
                             <p class="second-text">Obviously I'm a Web Designer. Web Developer with over 3 years of
                                 experience. Experienced with
                                 all stages of the development cycle for dynamic web projects.</p>
-                            <button class="btn">Download CV<i class="fas fa-download"></i></button>
+                            <button class="btn">CV Yüklə<i class="fas fa-download"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Header section end -->
 
     <!-- About section start -->
-    <div id="about" class="section-padding">
+    <section id="about" class="section-padding">
         <div class="container">
             <div class="about">
                 <div class="about-photo flex justify-content-center align-items-center">
-                    <img src="img/hero.png" alt="">
+                    <img src="img/me2.jpg" alt="">
                 </div>
-                <div class="about-content">
-                    <h2>Cristino Murphy</h2>
-                    <p class="about-content-p">I'm a Passionate <span class="text-primary">Web Designer</span></p>
-                    <p class="third-text">Obviously I'm a Web Designer. Web Developer with over 3 years of experience.
-                        Experienced with all stages of the development cycle for dynamic web projects. The as opposed to
-                        using 'Content here, content here', making it look like readable English.</p><br>
-                    <p class="third-text">Obviously I'm a Web Designer. Web Developer with over 3 years of experience.
-                        Experienced with all stages of the development cycle for dynamic web projects. The as opposed to
-                        using 'Content here, content here', making it look like readable English.</p>
-                    <img src="img/sign.png" alt="">
-                    <button class="btn">View Portfolio</button>
+                <div class="about-content flex justify-content-center align-items-start flex-direction-column">
+                    <h2>HAQQIMDA</h2>
+                    <p class="third-text">Salam, mən Aidə İsayeva, Prezident yanında Dövlət İdareçilik Akademiyasının
+                        Kompüter Elmləri ixtisasının 3-cü kurs tələbəsiyəm. Hal-hazırda Pragmatech
+                        Təhsil və İnkişaf Mərkəzində FrontEnd developer ixtisası üzrə təhsil alıram. </p><br><br>
+                    <span class="about-text">Biliklər :</span>
+                    <div class="about-buttons">
+                        <button class="btn-about">HTML</button>
+                        <button class="btn-about">CSS</button>
+                        <button class="btn-about">SASS</button>
+                        <button class="btn-about">JS</button>
+                        <button class="btn-about">GIT</button>
+                        <button class="btn-about">GITHUB</button>
+                    </div>
+                    <button class="btn">Portfolio</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- About section end -->
 
     <!-- Hobbies section start -->
-    <div id="hobbies">
+    <section id="hobbies">
         <div class="container">
             <div class="hobbies-title flex justify-content-center align-items-center flex-direction-column">
-                <h2 class="first-text">HOBBIES & INTERESTS</h2>
+                <h2 class="first-text">HOBBİLƏR VƏ MARAQLAR</h2>
                 <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
                     cycle for dynamic web
                     projects.</p>
@@ -129,7 +139,7 @@
                             <line x1="12" y1="17" x2="12" y2="21"></line>
                         </svg>
                     </div>
-                    <div class="hobby-text">Developing</div>
+                    <div class="hobby-text">Proqramlaşdırma</div>
                 </div>
                 <div class="hobby">
                     <div class="hobby-icon">
@@ -140,7 +150,7 @@
                             <rect x="9" y="9" width="6" height="6"></rect>
                         </svg>
                     </div>
-                    <div class="hobby-text">Mac OS</div>
+                    <div class="hobby-text">Pazl</div>
                 </div>
                 <div class="hobby">
                     <div class="hobby-icon">
@@ -151,7 +161,7 @@
                             <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
                         </svg>
                     </div>
-                    <div class="hobby-text">Cinema</div>
+                    <div class="hobby-text">Film</div>
                 </div>
                 <div class="hobby">
                     <div class="hobby-icon">
@@ -165,7 +175,7 @@
                             <line x1="14" y1="1" x2="14" y2="4"></line>
                         </svg>
                     </div>
-                    <div class="hobby-text">Coffee</div>
+                    <div class="hobby-text">İdman</div>
                 </div>
                 <div class="hobby">
                     <div class="hobby-icon">
@@ -177,7 +187,7 @@
                             <circle cx="18" cy="16" r="3"></circle>
                         </svg>
                     </div>
-                    <div class="hobby-text">Music</div>
+                    <div class="hobby-text">Musiqi</div>
                 </div>
                 <div class="hobby">
                     <div class="hobby-icon">
@@ -191,68 +201,7 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="hobby-text">Games</div>
-                </div>
-                <div class="hobby">
-                    <div class="hobby-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-box icon fea icon-md-sm">
-                            <path
-                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                            </path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <div class="hobby-text">Designing</div>
-                </div>
-                <div class="hobby">
-                    <div class="hobby-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-target icon fea icon-md-sm">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
-                    </div>
-                    <div class="hobby-text">Sports</div>
-                </div>
-                <div class="hobby">
-                    <div class="hobby-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-pen-tool icon fea icon-md-sm">
-                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                            <path d="M2 2l7.586 7.586"></path>
-                            <circle cx="11" cy="11" r="2"></circle>
-                        </svg>
-                    </div>
-                    <div class="hobby-text">Painting</div>
-                </div>
-                <div class="hobby">
-                    <div class="hobby-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-book icon fea icon-md-sm">
-                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                        </svg>
-                    </div>
-                    <div class="hobby-text">Reading</div>
-                </div>
-                <div class="hobby">
-                    <div class="hobby-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-smartphone icon fea icon-md-sm">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                        </svg>
-                    </div>
-                    <div class="hobby-text">Android</div>
+                    <div class="hobby-text">Oyunlar</div>
                 </div>
                 <div class="hobby">
                     <div class="hobby-icon">
@@ -266,11 +215,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Hobbies section end -->
 
     <!-- Counter section start -->
-    <div id="counter" class="section-padding">
+    <section id="counter" class="section-padding">
         <div class="container">
             <div class="counter">
                 <div class="counter-item">
@@ -321,11 +270,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Counter section end -->
 
     <!-- Offer section start -->
-    <div id="offer" class="section-padding">
+    <section id="offer" class="section-padding">
         <div class="container">
             <div class="offer-title flex justify-content-center align-items-center flex-direction-column">
                 <h2 class="first-text">WHAT DO I OFFER ?</h2>
@@ -482,58 +431,51 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Offer section end -->
 
     <!-- Participation section start -->
-    <div id="participation" class="section-padding">
+    <section id="participation" class="section-padding">
         <div class="container">
             <div class="participation-title flex justify-content-center align-items-center flex-direction-column">
-                <h2 class="first-text">WORK PARTICIPATION</h2>
+                <h2 class="first-text">Təhsil</h2>
                 <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
                     cycle for dynamic web projects.</p>
             </div>
             <div class="participation">
                 <div class="participation-date flex justify-content-end align-items-start">
-                    <p>2015 - 2018</p>
+                    <p>2019 - 2022</p>
                 </div>
                 <div class="participation-item">
-                    <h3 class="fourth-text">UX Designer</h3>
-                    <span>Vivo - Senior Designer</span>
-                    <p class="third-text">The generated injected humour, or non-characteristic words etc. Cum sociis
-                        natoque penatibus et
-                        magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+                    <h3 class="fourth-text">Bakalavr</h3>
+                    <span>İxtisas - Kompüter Elmləri</span>
+                    <p class="third-text">Prezident yanında Dövlət İdareçilik Akademiyası</p>
+                </div>
+                <div class="participation-date  flex justify-content-end align-items-start">
+                    <p>01.04.21 - 31.08.21</p>
                 </div>
                 <div class="participation-item participation-item-second">
-                    <h3 class="fourth-text">Web Developer</h3>
-                    <span>Oppo - HR Manager</span>
-                    <p class="third-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna
-                        vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet.</p>
-                </div>
-                <div class="participation-date">
-                    <p>2012 - 2015</p>
+                    <h3 class="fourth-text">Foundation</h3>
+                    <p class="third-text">Pragmatech Təhsil və İnkişaf Mərkəzi</p>
                 </div>
                 <div class="participation-date flex justify-content-end align-items-start">
-                    <p>2012 - 2010</p>
+                    <p>09.2021</p>
                 </div>
                 <div class="participation-item">
-                    <h3 class="fourth-text">Graphic Designer</h3>
-                    <span>Apple - Testor</span>
-                    <p class="third-text">Therefore always free from repetition, injected humour, or non-characteristic
-                        words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        Donec quam felis,</p>
+                    <h3 class="fourth-text">FrontEnd</h3>
+                    <p class="third-text">Pragmatech Təhsil və İnkişaf Mərkəzi</p>
                 </div>
             </div>
 
         </div>
-    </div>
+    </section>
     <!-- Participation section end -->
 
     <!-- Portfolio section start -->
-    <div id="portfolio" class="section-padding">
+    <section id="portfolio" class="section-padding">
         <div class="container">
             <div class="portfolio-title flex justify-content-center align-items-center flex-direction-column">
-                <h2 class="first-text">MY PORTFOLIO</h2>
+                <h2 class="first-text">PORTFOLIO</h2>
                 <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
                     cycle for dynamic web projects.</p>
             </div>
@@ -591,17 +533,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Portfolio section end -->
 
     <!-- Testimonials section start -->
-    <div id="testimonials">
+    <section id="testimonials">
         <div class="container-full">
             <div class="testimonials-full">
                 <div class="testimonials-content">
                     <div
                         class="testimonials-title flex justify-content-center align-items-center flex-direction-column">
-                        <h2 class="first-text">CLIENTS SAY</h2>
+                        <h2 class="first-text">RƏYLƏR</h2>
                         <p class="third-text">Obviously I'm a Web Designer. Experienced with all stages of the
                             development
                             cycle for dynamic web projects.</p>
@@ -695,11 +637,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Testimonials section end -->
 
     <!-- Blogs section start -->
-    <div id="blogs" class="section-padding">
+    <section id="blogs" class="section-padding">
         <div class="container">
             <div class="blogs-title flex justify-content-center align-items-center flex-direction-column">
                 <h2 class="first-text">LATEST NEWS & BLOG</h2>
@@ -820,11 +762,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Blogs section end -->
 
     <!-- Hireme section start -->
-    <div id="hireme">
+    <section id="hireme">
         <div class="container">
             <div class="hireme flex justify-content-center align-items-center flex-direction-column">
                 <h2 class="first-text">I Am Available For Freelancer Projects.</h2>
@@ -833,14 +775,14 @@
                 <button class="btn">Hire me<i class="fa fa-chevron-down"></i></button>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Hireme section end -->
 
     <!-- Contact section start -->
-    <div id="contact" class="section-padding">
+    <section id="contact" class="section-padding">
         <div class="container">
             <div class="contact-title flex justify-content-center align-items-center flex-direction-column">
-                <h2 class="first-text">CONTACT ME</h2>
+                <h2 class="first-text">ƏLAQƏ</h2>
                 <p class="second-text">Obviously I'm a Web Designer. Experienced with all stages of the development
                     cycle for dynamic web projects.</p>
             </div>
@@ -853,7 +795,7 @@
                             d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
                         </path>
                     </svg>
-                    <h4 class="fourth-text">PHONE</h4>
+                    <h4 class="fourth-text">TELEFON</h4>
                     <p class="third-text">Promising development turmoil inclusive education transformative community
                     </p>
                     <span>+152 534-468-854</span>
@@ -868,7 +810,7 @@
                     <h4 class="fourth-text">EMAIL</h4>
                     <p class="third-text">Promising development turmoil inclusive education transformative community
                     </p>
-                    <span>contact@example.com</span>
+                    <span>aideisayeva3@gmail.com</span>
                 </div>
                 <div class="contact-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -877,7 +819,7 @@
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                         <circle cx="12" cy="10" r="3"></circle>
                     </svg>
-                    <h4 class="fourth-text">LOCATION</h4>
+                    <h4 class="fourth-text">MƏKAN</h4>
                     <p class="third-text">C/54 Northwest Freeway, Suite 558,
                         Houston, USA 485</p>
                     <span>View on Google map</span>
@@ -890,14 +832,14 @@
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message:" class="message"></textarea>
             </div>
             <div class="contact-btn flex justify-content-end">
-                <button class="btn">Send Message</button>
+                <button class="btn">Mesaj göndər</button>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Contact section end -->
 
     <!-- Footer section start -->
-    <div id="footer">
+    <section id="footer">
         <div class="container-full">
             <div class="footer flex justify-content-center align-items-center flex-direction-column">
                 <img src="img/logo-light.png" alt="" class="w100">
@@ -918,18 +860,18 @@
                 <p class="second-text">© 2021 Cristino. Design with by Shreethemes.</p>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Footer section end -->
 
 
-    <script src="counter.js"></script>
-    <script src="filter.js"></script>
-    <script src="testimonials.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/testimonials.js"></script>
     <!--  <script src="navbar.js"></script> -->
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
-
-    <script src="navbartest.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/navbartest.js"></script>
+    <script src="js/text.js"></script>
 
 
 </body>

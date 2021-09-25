@@ -13,14 +13,14 @@
 }
 
 #header {
-    background-image: url(../img/home/02.jpg);
+    background-image: url(../img/home/florian-olivo-4hbJ-eymZ1o-unsplash.jpg);
     background-position: center center;
     background-size: cover;
     height: 800px;
 }
 
 .header-overlay {
-    background-color: rgb(58 45 82 / 45%);
+    background-color: rgb(13 4 54 / 56%);
     position: absolute;
     height: 800px;
     z-index: 2;
@@ -58,7 +58,7 @@
 }
 
 .header-photo img {
-    width: 41%;
+    width: 27%;
 }
 
 .header-photo img {
@@ -72,10 +72,20 @@
     top: 27%;
 }
 
-.header-content h1 {
-    color: white;
+.header-content-text {
     font-size: 46px;
     margin: 19px;
+    display: flex;
+    font-weight: 700;
+}
+
+.header-content-text p {
+    color: white;
+}
+
+#type-text,
+.blinking-cursor {
+    color: #e54b4b;
 }
 
 .header-content p {
@@ -108,6 +118,19 @@
     border-radius: 10px;
 }
 
+.blinking-cursor {
+    user-select: none;
+    animation: blink 1s steps(2, start);
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden
+    }
+}
+
+
+
 /* Header section end */
 
 /* About section start */
@@ -125,6 +148,26 @@
     font-size: 29px;
 }
 
+.about-text {
+    font-size: 19px;
+    color: #b4c2d6;
+    letter-spacing: 0.04em;
+    line-height: 1.8;
+    margin-left: 2px;
+}
+
+.btn-about {
+    border: 1px solid #6c757d;
+    /* cursor: pointer; */
+    background: none;
+    color: white;
+    border-radius: 9px;
+    margin: 0 2px;
+    text-align: center;
+    font-size: 12px;
+    padding: 9px 14PX;
+}
+
 .about-content-p {
     color: white;
     font-size: 18px;
@@ -138,8 +181,12 @@
 }
 
 .about-photo img {
-    border: 16px solid #6c757d;
+    border: 7px solid #6c757d;
     width: 75%;
+    border-radius: 23px;
+    box-shadow: -1px -2px 17px -1px rgb(4 20 163 / 51%);
+    -webkit-box-shadow: -1px -2px 17px -1px rgb(4 20 163 / 51%);
+    -moz-box-shadow: -1px -2px 17px -1px rgba(4, 20, 163, 0.51);
 }
 
 /* About section end */
@@ -148,7 +195,7 @@
 
 .hobbies {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px 50px;
     position: relative;
@@ -353,11 +400,6 @@
     border-radius: 30px;
     left: -29px;
 }
-
-.participation-item-second::after {
-    left: 102.3%;
-}
-
 /* Participation section end */
 
 /* Portfolio section start */

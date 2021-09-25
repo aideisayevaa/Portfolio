@@ -1,5 +1,42 @@
 @media (max-width:576px) {
 
+    .navbar-menu {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 66px;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #1e163b;
+        overflow: hidden;
+        transition: .5s ease;
+        z-index: 9;
+    }
+
+    .navbar-menu li {
+        display: none;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .navbar-menu li a {
+        font-size: 18px;
+    }
+
+
+    input[type="checkbox"]:checked~.navbar-menu li {
+        display: block;
+    }
+
+    .icon-burger {
+        display: block;
+    }
+
+
     .second-text {
         width: 100%;
         font-size: 15px;
@@ -13,18 +50,6 @@
         width: 100%;
     }
 
-    .nav-menu ul {
-        display: none;
-        float: none;
-        position: fixed;
-        z-index: 9;
-        left: 6%;
-        top: 95px;
-        width: 90%;
-        height: auto;
-        background-color: #2b2b24be;
-        transition: .5s ease;
-    }
 
     .navbar {
         padding: 0;
@@ -32,30 +57,6 @@
 
     .nav-logo img {
         width: 149%;
-    }
-
-
-    .nav-menu ul li {
-        padding: 20px;
-        border-bottom: 1px solid var(--gray);
-        cursor: pointer;
-    }
-
-    .nav-menu li a {
-        font-size: 18px;
-        color: var(--white);
-    }
-
-    .nav-menu li:hover a {
-        color: var(--dark-gold)
-    }
-
-    input[type="checkbox"]:checked+.nav-menu {
-        display: block
-    }
-
-    .icon-burger {
-        display: block;
     }
 
     .header-content p {

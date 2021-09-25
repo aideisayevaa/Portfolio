@@ -1,17 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Roboto",sans-serif;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
     background: #161C2D;
     color: white;
 }
 
 .container-full {
-    width:100%;
+    width: 100%;
 }
 
 .container {
@@ -24,7 +28,7 @@ body{
     justify-content: space-between;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
