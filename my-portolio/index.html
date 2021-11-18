@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>My-Portfolio</title>
+</head>
+
+<body>
+    <!-- Header section start -->
+    <section id="header">
+        <div id="particles-js"></div>
+        <div class="header-overlay">
+            <div id="myNavbar" class="row navbar">
+                <div class="col-2">
+                    <div class="nav-logo">
+                      <span>AIDA</span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="nav-menu flex justify-content-around">
+                        <input id="nav-toggle" type="checkbox">
+                        <ul class="navbar-menu flex">
+                            <input id="nav-toggle" type="checkbox">
+                            <li><a href="#header">Ana Səhifə</a></li>
+                            <li><a href="#about">Haqqımda</a></li>
+                            <li><a href="#hobbies">Hobbilər</a></li>
+                            <li><a href="#participation">Təhsil</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Əlaqə</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="col-2 flex justify-content-end">
+                    <div class="icons">
+                        <a href="https://github.com/aideisayevaa"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aid%C9%99-isayeva-80954a209"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+
+
+                    <label for="nav-toggle" class="icon-burger">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+            </div>
+            <div class="container-full">
+                <div class="row">
+                    <div class="col-12">
+                        <div
+                            class="header-content flex justify-content-center align-items-center flex-direction-column">
+                            <div class="header-photo flex justify-content-center">
+                                <img src="./img/me2.jpg" alt="">
+                            </div>
+
+                            <div class='console-container'><span id='text'></span>
+                                <div class='console-underscore' id='console'>&#95;</div>
+                            </div>
+                            <p class="second-text">Sizlər üçün hər ekrana uyğunlaşdırılmış və çox funksiyalı web
+                                səhifələr hazırlaya bilərəm.</p>
+                            <!--   <a href="#"><button class="btn">CV Yüklə<i class="fas fa-download"></i></button></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header section end -->
+
+    <!-- About section start -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about">
+                <div class="about-photo flex justify-content-center align-items-center">
+                    <img src="./img/me2.jpg" alt="">
+                </div>
+
+                <div class="about-content flex justify-content-center align-items-start flex-direction-column">
+                    <h2>HAQQIMDA</h2>
+
+                    <p class="third-text">Salam, mən Aidə İsayeva, Prezident yanında Dövlət İdareçilik Akademiyasının
+                        Kompüter Elmləri ixtisasının 3-cü kurs tələbəsiyəm. Hal-hazırda Pragmatech Təhsil və İnkişaf
+                        Mərkəzində FrontEnd developer ixtisası üzrə təhsil alıram.</p><br><br>
+
+
+                    <span class="about-text">Biliklər :</span>
+                    <div class="about-buttons">
+
+                        <button class="btn-about">HTML</button>
+                        <button class="btn-about">CSS</button>
+                        <button class="btn-about">SASS</button>
+                        <button class="btn-about">Bootstrap</button>
+                        <button class="btn-about">JS</button>
+                        <button class="btn-about">Git</button>
+                        <button class="btn-about">Github</button>
+                        <button class="btn-about">Figma</button>
+
+                    </div>
+                    <a href="#portfolio"><button class="btn">Portfolio</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Hobbies section start -->
+    <section id="hobbies">
+        <div class="container">
+            <div class="hobbies-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">HOBBİLƏR VƏ MARAQLAR</h2>
+                <p class="second-text"></p>
+            </div>
+            <div class="hobbies">
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <!--  <i class="{{hobby.hobby_icon}}"></i> -->
+                    </div>
+                    <div class="hobby-text">Proqramlaşdırma</div>
+                </div>
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <!--  <i class="{{hobby.hobby_icon}}"></i> -->
+                    </div>
+                    <div class="hobby-text">Araşdırma</div>
+                </div>
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <!--  <i class="{{hobby.hobby_icon}}"></i> -->
+                    </div>
+                    <div class="hobby-text">Filmlər</div>
+                </div>
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <!--  <i class="{{hobby.hobby_icon}}"></i> -->
+                    </div>
+                    <div class="hobby-text">Pazl</div>
+                </div>
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <!--  <i class="{{hobby.hobby_icon}}"></i> -->
+                    </div>
+                    <div class="hobby-text">Musiqi</div>
+                </div>
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <!--  <i class="{{hobby.hobby_icon}}"></i> -->
+                    </div>
+                    <div class="hobby-text">Üzgüçülük</div>
+                </div>
+                <div class="hobby">
+                    <div class="hobby-icon">
+                        <!--  <i class="{{hobby.hobby_icon}}"></i> -->
+                    </div>
+                    <div class="hobby-text">Rəsm</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Hobbies section end -->
+
+    <!-- Participation section start -->
+    <section id="participation" class="section-padding">
+        <div class="container">
+            <div class="participation-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">Təhsil</h2>
+            </div>
+            <div class="participation">
+                <div class="row">
+                    <div class="col-6 w40">
+                        <div class="participation-date flex justify-content-end align-items-start">
+                            <p>2019 - 2022</p>
+                        </div>
+                    </div>
+                    <div class="col-6 w60">
+                        <div class="participation-item">
+                            <h3 class="fourth-text">Prezident yanında Dövlət İdarəçilik Akademiyası</h3>
+                            <p class="third-text">Bakalavr</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 w40">
+                        <div class="participation-date flex justify-content-end align-items-start">
+                            <p>03-2021 - 08-2021</p>
+                        </div>
+                    </div>
+                    <div class="col-6 w60">
+                        <div class="participation-item">
+                            <h3 class="fourth-text">Pragmatech Education and Development Center</h3>
+                            <p class="third-text">Foundation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 w40">
+                        <div class="participation-date flex justify-content-end align-items-start">
+                            <p>oktyabr-2021</p>
+                        </div>
+                    </div>
+                    <div class="col-6 w60">
+                        <div class="participation-item">
+                            <h3 class="fourth-text">Pragmatech Education and Development Center</h3>
+                            <p class="third-text">Frontend ixtisas qrupu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Participation section end -->
+
+    <!-- Portfolio section start -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <div class="portfolio-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">PORTFOLIO</h2>
+            </div>
+            <div class="portfolios">
+
+                <div class="portfolio">
+                    <a href="#">
+                        <img src="./img/mee.jpg" alt="">
+                        <h4 class="fourth-text">Portfolio</h4>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="https://aideisayevaa.github.io/RestaurantProject/">
+                        <img src="./img/portfolio-2.jpg" alt="">
+                        <h4 class="fourth-text">Restoran</h4>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="https://aideisayevaa.github.io/LandingPage/">
+                        <img src="./img/portfolio-3.jpg" alt="">
+                        <h4 class="fourth-text">Appilo</h4>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="https://aideisayevaa.github.io/PragmatechFrontendProject/Extra/Trafalgar/">
+                        <img src="./img/portfolio-4.jpg" alt="">
+                        <h4 class="fourth-text">Trafalgar</h4>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="https://aideisayevaa.github.io/UI-Design/">
+                        <img src="./img/portfolio-5.jpg" alt="">
+                        <h4 class="fourth-text">UI-design</h4>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="https://aideisayevaa.github.io/PragmatechFoundationProject/Algorithms/PracticeHtmlCss/">
+                        <img src="./img/portfolio-6.jpg" alt="">
+                        <h4 class="fourth-text">UI-design</h4>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="https://aideisayevaa.github.io/PragmatechFrontendProject/ChallangeWeek03/">
+                        <img src="./img/portfolio-7.jpg" alt="">
+                        <h4 class="fourth-text">Quiz App</h4>
+                    </a>
+                </div>
+                <div class="portfolio">
+                    <a href="https://aideisayevaa.github.io/PragmatechFrontendProject/ChallangeWeek02/StickyNotes/">
+                        <img src="./img/portfolio-8.jpg" alt="">
+                        <h4 class="fourth-text">Quiz App</h4>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio section end -->
+
+    <!-- Testimonials section start -->
+    <section id="testimonials">
+        <div class="container-full">
+            <div class="testimonials-full">
+                <div class="testimonials-content">
+                    <div
+                        class="testimonials-title flex justify-content-center align-items-center flex-direction-column">
+                        <h2 class="first-text">RƏYLƏR</h2>
+                    </div>
+                    <div class="testimonials">
+                        <div class="testimonials-item">
+                            <h6 class="fourth-text">"LOREM"</h6>
+                            <p class="third-text">Lorem ipsum dolor sit.</p>
+                            <div class="author flex">
+                                <div class="col-2">
+                                    <div class="author-photo">
+                                        <img src="./img/testi.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10 flex align-items-center">
+                                    <div class="author-content">
+                                        <h5 class="first-text">lorem</h5>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis
+                                            blanditiis consequuntur in optio facilis totam commodi ex nobis
+                                            architecto.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-item">
+                            <h6 class="fourth-text">"LOREM"</h6>
+                            <p class="third-text">Lorem ipsum dolor sit.</p>
+                            <div class="author flex">
+                                <div class="col-2">
+                                    <div class="author-photo">
+                                        <img src="./img/testi.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10 flex align-items-center">
+                                    <div class="author-content">
+                                        <h5 class="first-text">lorem</h5>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis
+                                            blanditiis consequuntur in optio facilis totam commodi ex nobis
+                                            architecto.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonials-item">
+                            <h6 class="fourth-text">"LOREM"</h6>
+                            <p class="third-text">Lorem ipsum dolor sit.</p>
+                            <div class="author flex">
+                                <div class="col-2">
+                                    <div class="author-photo">
+                                        <img src="./img/testi.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-10 flex align-items-center">
+                                    <div class="author-content">
+                                        <h5 class="first-text">lorem</h5>
+                                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam omnis
+                                            blanditiis consequuntur in optio facilis totam commodi ex nobis
+                                            architecto.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials-circles flex justify-content-center">
+                        <div class="testimonials-circle" onclick="currentSlide(1)"></div>
+                        <div class="testimonials-circle" onclick="currentSlide(2)"></div>
+                        <div class="testimonials-circle" onclick="currentSlide(3)"></div>
+                    </div>
+                </div>
+                <div class="testimonials-photo">
+                    <img src="./img/me2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials section end -->
+
+    <!-- Hireme section start -->
+    <section id="hireme">
+        <div class="container">
+            <div class="hireme flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">Freelancer Layihələri Üçün Də Hazıram.</h2>
+                <button class="btn"><a href="#contact">Mənimlə əlaqə</a><i class="fa fa-chevron-down"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- Hireme section end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-title flex justify-content-center align-items-center flex-direction-column">
+                <h2 class="first-text">ƏLAQƏ</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h4 class="fourth-text">Telefon</h4>
+                    <span>+994 55 229 67 23</span>
+                </div>
+                <div class="contact-item">
+                    <i class="far fa-envelope"></i>
+                    <h4 class="fourth-text">Email</h4>
+                    <span>aideisayeva3@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4 class="fourth-text">Məkan</h4>
+                    <span>Bakı,Azərbaycan</span>
+                </div>
+            </div>
+
+            <form action="/admin/contactform" method="post">
+                <div class="contact-form">
+                    <input type="text" placeholder="Ad Soyad:" class="name form" id="name" name="user_name">
+                    <input type="text" placeholder="Email:" class="email form" id="email" name="user_email">
+                    <input type="text" placeholder="Başlıq:" class="subject form" name="user_subject">
+                    <textarea cols="30" rows="10" placeholder="Mesajınız:" class="message"
+                        name="user_message"></textarea>
+                </div>
+
+                <div class="contact-btn flex justify-content-end">
+                    <button class="btn">Mesaj göndər</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section start -->
+    <section id="footer">
+        <div class="container-full">
+            <div class="footer flex justify-content-center align-items-center flex-direction-column">
+
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- <div class="footer-line"></div>
+            <div class="flex justify-content-center">
+                <p class="second-text">© 2021 Cristino. Design with by Shreethemes.</p>
+            </div> -->
+        </div>
+    </section>
+    <!-- Footer section end -->
+
+
+    <script src="./js/filter.js"></script>
+    <script src="./js/testimonials.js"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/text.js"></script>
+
+
+</body>
+
+</html>
