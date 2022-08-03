@@ -1,0 +1,4 @@
+
+# env silinmir
+# . env/scripts/activate
+#  py run.py
