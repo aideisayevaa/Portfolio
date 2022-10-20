@@ -13,7 +13,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 
 // text animation
-consoleText(['Aida Isayeva', ' ', 'Frontend developer'], 'text',['white','white','white']);
+consoleText(['Aidə İsayeva', ' ', 'Frontend Developer'], 'text',['white','white','white']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'] ;

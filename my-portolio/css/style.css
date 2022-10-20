@@ -75,7 +75,7 @@
     width: 71%;
 }
 
-.nav-logo span {
+.nav-logo a {
     font-size: 39px;
     letter-spacing: 5px;
     color: #ffe9fc;
@@ -97,6 +97,7 @@
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     transition: .5s ease;
+    width: max-content;
 }
 
 .nav-menu ul li:hover a {
@@ -206,6 +207,17 @@
     margin-left: 2px;
 }
 
+.about-buttons {
+    width: 100%;
+}
+
+.about-buttons .flex {
+    gap: 13px;
+    flex-direction: column;
+    width: 50%;
+    /* justify-content: space-around; */
+}
+
 .btn-about {
     border: 1px solid #6c757d;
     /* cursor: pointer; */
@@ -216,6 +228,20 @@
     text-align: center;
     font-size: 12px;
     padding: 9px 14PX;
+    width: 100px;
+}
+
+.about-buttons .flex .flex {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.progress {
+    height: 10px;
+    width: 50%;
+    background-color: #195AA1;
+    margin-right: 20px;
 }
 
 .about-content-p {
@@ -425,7 +451,7 @@
 .participation-date p {
     border: 1px solid #495057;
     border-radius: 10px;
-    width: 27%;
+    width: max-content;
     text-align: center;
     padding: 15px 32px;
 }
@@ -454,6 +480,16 @@
     border-radius: 30px;
     left: -29px;
 }
+
+/* .participation .row:nth-child(2) .w40{
+    order: 1;
+}
+
+.participation .row:nth-child(2) .participation-item::after{
+    right: -29px !important;
+} */
+
+
 
 /* Participation section end */
 
@@ -609,6 +645,37 @@
 
 }
 
+.self_skills {
+    border: 1px solid #5c5c5cd6;
+    border-radius: 0px 130px;
+    width: 75%;
+    height: 75%;
+    font-size: 22px;
+    margin: 0 auto;
+    list-style: none;
+    margin-top: 20px;
+    position: relative;
+}
+
+.self_skills ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.self_skills ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.self_skills ul li i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
 /* Testimonials section end */
 
 /* Blogs section start */
@@ -723,6 +790,11 @@
     gap: 30px;
 }
 
+textarea {
+    resize: none;
+    outline: none;
+}
+
 .message {
     grid-area: 1 / 2 / span 3 / span 1;
     background: #1F2D3D;
@@ -740,6 +812,7 @@
     border-radius: 8px;
     border: 1px solid #495057;
     color: white;
+    outline: none;
 }
 
 /* Contact section end */
