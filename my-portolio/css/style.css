@@ -240,8 +240,19 @@
 .progress {
     height: 10px;
     width: 50%;
-    background-color: #195AA1;
+    background-color: #ffe9fc;
     margin-right: 20px;
+    position: relative;
+}
+
+.progress::before {
+    content: attr(value);
+    width: 65%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #328ff2;
 }
 
 .about-content-p {
